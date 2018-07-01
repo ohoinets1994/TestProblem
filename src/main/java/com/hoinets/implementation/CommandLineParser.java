@@ -12,6 +12,10 @@ import java.util.Date;
 import java.util.List;
 
 public class CommandLineParser {
+    private final String ADD = "add";
+    private final String LIST = "list";
+    private final String CLEAR = "clear";
+    private final String TOTAL = "total";
     private DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private ExpensesOperations expensesOperations;
     private BufferedReader bufferedReader;
@@ -26,20 +30,22 @@ public class CommandLineParser {
     private void parseCommands() {
         try {
             String text;
+            System.out.println("To exit enter - ESC!");
+            System.out.println("Please enter the command:");
             while (!(text = bufferedReader.readLine()).equals("ESC")) {
                 List<String> list = Arrays.asList(text.split(" "));
 
                 switch (list.get(0)) {
-                    case "add":
+                    case ADD:
                         parseAddCommand(list);
                         break;
-                    case "list":
+                    case LIST:
                         parseListCommand(list);
                         break;
-                    case "clear":
+                    case CLEAR:
                         parseClearCommand(list);
                         break;
-                    case "total":
+                    case TOTAL:
                         parseTotalCommand(list);
                         break;
                     default:

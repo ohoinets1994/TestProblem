@@ -75,8 +75,7 @@ public class MyExpenses implements ExpensesOperations {
             double result = costsInEUR * exchangeRater.getRate(currency);
 // right now it outputs number with comma `,`, but that is dependant on your current language set on your computer,
 // if force to Locale.US it will output with dot `.`
-            System.out.format(Locale.US, "%.2f " + currency, result);
-            System.out.println("\n");
+            System.out.format("%.2f " + currency + "\n", result);
         } catch (JSONException e) {
             System.out.println(currency + " - this currency is invalid!");
         }
