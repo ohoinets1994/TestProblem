@@ -1,6 +1,6 @@
 <h1>Test Problem<br>
 
-To build project was used **Maven** tool which should be installed on PC. 
+<p>To build project was used **Maven** tool which should be installed on PC. 
 To build project using Command Line please download *Maven* tool by this [**LINK.**](https://maven.apache.org/download.cgi)
 <h2>Maven<br>
 <p>JSON version:<br>
