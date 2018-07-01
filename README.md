@@ -1,7 +1,7 @@
-#Test Problem 
+#Test Problem<h6>
 To build project was used **Maven** tool which should be installed on PC. 
 To build project using Command Line please download *Maven* tool by this [**LINK.**](https://maven.apache.org/download.cgi)
-##Maven
+##Maven<h6>
 JSON version:
 ```xml
 <dependency>
@@ -19,7 +19,7 @@ JUNIT version:
     <scope>test</scope>
 </dependency>
 ```
-##Інструкція Manual
+##Manual<h6>
 **Step 1:** Clone a project from the repository;<br>
 
 **Step 2:** Open a command line in the project root directory;<br>
